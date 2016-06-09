@@ -1,0 +1,113 @@
+/*
+	Put your custom CSS here.
+
+	You may find these CSS3 properties useful:;
+		transition
+		-webkit-transform
+		-webkit-transform-style
+		-webkit-backface-visibility
+*/
+/*Cards*/
+
+p{
+	font-size: 50px;
+	text-align: center;
+}
+/*.card-area{
+	width: 100px;
+	height: 300px;
+	background: grey;
+	position: absolute;
+	margin-top: 100px; 
+}*/
+
+.card-item{
+	position: relative;
+	width: 182px;
+	height: 244px;
+
+	/*margin: 25px;*/
+}
+
+
+.top {
+	overflow: hidden;
+	/*width: 182px;*/
+	/*height: 244px;*/
+	-webkit-transition-duration: 1s;
+}
+
+
+.card-item:hover .top{
+	opacity: 0;
+	-webkit-transform:rotateY(180deg);
+}
+
+
+.bottom {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 20px;
+	width: 160px;
+	height: 160px;
+	opacity: 0;
+	-webkit-transition-duration: 1s;
+  	-webkit-transform:rotateY(-180deg);
+}
+
+.card-item:hover .bottom{
+	opacity: 1;
+	/*background: grey;*/
+	-webkit-transform:rotateY(0deg);
+}
+
+
+
+/*old---------------------------------------------------------*/
+
+h2 {
+	margin-top: 0px;
+}
+
+
+
+.portfolio-item {
+	position: relative;
+}
+
+.front {
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	-webkit-transition-duration: 1s;
+}
+
+/*.front:hover {
+	opacity: 0;
+	*/
+ 
+.portfolio-item:hover .front{
+	opacity: 0;
+	-webkit-transform:rotateY(180deg);
+}
+
+.back {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 20px;
+	width: 160px;
+	height: 160px;
+	opacity: 0;
+	-webkit-transition-duration: 1s;
+  	-webkit-transform:rotateY(-180deg);
+}
+
+/*.back:hover{
+	opacity: 1;*/
+
+.portfolio-item:hover .back{
+	opacity: 1;
+	-webkit-transform:rotateY(0deg);
+}
